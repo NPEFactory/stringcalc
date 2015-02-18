@@ -12,18 +12,19 @@ package com.mycompany.stringcalc;
 public class StringCalculator {
 
     /**
-     * Adding the numbers in the given string just separeted with ","
-     *
-     * @param src - the string with numbers separeted with "," ex: "6,4" -> 10
-     * @return sum of number args
+     * Adding the numbers in the given string can be separated with any char or
+     * string.     
+     * if no numbers in the string 0 will be given back
+     * @param src - the string with numbers in it
+     * @return sum of numbers in the string
      */
     public int add(String src) {
         if (src.isEmpty()) {
             return 0;
         }
 
+        String[] numbers = src.split("[^0123456789]");
         int sum = 0;
-        String[] numbers = src.split(",");
         for (String number : numbers) {
             try {
                 sum += Integer.valueOf(number);
@@ -33,6 +34,7 @@ public class StringCalculator {
         }
 
         return sum;
+
     }
 
 }
