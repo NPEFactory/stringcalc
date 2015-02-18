@@ -12,6 +12,13 @@ package com.mycompany.stringcalc;
  */
 public class StringCalculator {
     
+    /**
+     * Adding the numbers in the given string
+     * just separeted with "," 
+     * @param src   - the string with numbers separeted with ","
+     *  ex: "6,4" -> 10
+     * @return sum of number args
+     */
     public int add(String src){
         if (src.isEmpty()) return 0;
         return -1;
