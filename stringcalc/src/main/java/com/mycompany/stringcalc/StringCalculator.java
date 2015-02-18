@@ -10,6 +10,11 @@ package com.mycompany.stringcalc;
  *
  * @author poker07
  */
-public class stringCalculator {
+public class StringCalculator {
+    
+    public int add(String src){
+        if (src.isEmpty()) return 0;
+        return -1;
+    }
     
 }
