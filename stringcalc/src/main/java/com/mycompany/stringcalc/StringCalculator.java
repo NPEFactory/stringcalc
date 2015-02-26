@@ -5,7 +5,6 @@
  */
 package com.mycompany.stringcalc;
 
-import java.util.regex.Pattern;
 
 /**
  *
